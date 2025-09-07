@@ -1,0 +1,50 @@
+[project]
+name = "searchengine"
+version = "0.1.0"
+description = "Multimodal search engine using CLIP embeddings for bidirectional image-text retrieval."
+authors = [
+    {name = "LeonByte"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "sentence-transformers (==5.1.0)",
+    "transformers (==4.41.0)",
+    "accelerate (==0.30.0)",
+    "numpy (>=1.24.0,<2.0.0)",
+    "jupyter (==1.0.0)",
+    "gradio (==4.0.0)",
+    "matplotlib (==3.7.0)",
+    "seaborn (==0.12.0)",
+    "tqdm (==4.65.0)",
+    "pillow (==10.0.0)",
+    "torch (>=2.6.0,<3.0.0)",
+    "torchvision (>=0.21.0,<0.22.0)",
+    "requests (==2.31.0)",
+    "kaggle (==1.6.6)",
+    "pandas (>=2.3.2,<3.0.0)",
+    "scikit-learn (>=1.7.1,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu124"
+priority = "explicit"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.2"
+black = "^25.1.0"
+isort = "^6.0.1"
+ruff = "^0.12.12"
+
+
+[tool.poetry.dependencies]
+torch = {source = "pytorch"}
+torchvision = {source = "pytorch"}
