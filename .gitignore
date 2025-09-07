@@ -1,6 +1,6 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
-*.py[codz]
+*.py[cod]
 *$py.class
 
 # C extensions
@@ -46,7 +46,7 @@ htmlcov/
 nosetests.xml
 coverage.xml
 *.cover
-*.py.cover
+*.py,cover
 .hypothesis/
 .pytest_cache/
 cover/
@@ -118,7 +118,7 @@ ipython_config.py
 .pdm-build/
 
 # pixi
-#   Similar to Pipfile.lock, it is generally recommended to include pixi.lock in version control.
+#   Similar to Pipenv.lock, it is generally recommended to include pixi.lock in version control.
 #pixi.lock
 #   Pixi creates a virtual environment in the .pixi directory, just like venv module creates one
 #   in the .venv directory. It is recommended not to include this directory in version control.
@@ -205,3 +205,89 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# ============================================================================
+# ML/AI SPECIFIC ADDITIONS
+# ============================================================================
+
+# Dataset files (large and should be downloaded separately)
+data/raw/
+data/external/
+data/interim/
+*.zip
+*.tar.gz
+*.tar.bz2
+
+# Generated embeddings and processed data (can be large)
+data/processed/*.npy
+data/processed/*.pkl
+data/processed/*.h5
+data/processed/*.hdf5
+data/processed/embeddings/
+data/processed/similarity_indices/
+
+# Model artifacts and checkpoints
+models/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.model
+*.bin
+*.safetensors
+
+# CLIP model cache (sentence-transformers downloads)
+.cache/
+*/.cache/
+sentence_transformers_cache/
+
+# Hugging Face cache
+.transformers_cache/
+huggingface_cache/
+
+# Similarity search indices (can be regenerated)
+*.index
+*.faiss
+
+# Large output files
+*.h5
+*.hdf5
+outputs/large_files/
+
+# Tensorboard logs
+runs/
+logs/
+tb_logs/
+
+# MLflow artifacts
+mlruns/
+mlartifacts/
+
+# Weights & Biases
+wandb/
+
+# Gradio temporary files
+gradio_cached_examples/
+.gradio/
+
+# Jupyter notebook outputs (keep structure but not outputs)
+# Uncomment if you want to track notebooks without outputs
+# *.ipynb
+
+# CUDA compilation cache
+.nv/
+
+# Large temporary files
+temp/
+tmp/
+*.tmp
+*.temp
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
