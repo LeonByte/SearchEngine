@@ -1,4 +1,4 @@
-# SearchEngine
+# Search Engine
 
 **COMPLETED: Multimodal search engine using CLIP embeddings for bidirectional image-text retrieval.**
 
@@ -77,7 +77,7 @@ Built for local deployment on **NVIDIA RTX 4060 (8GB VRAM)** with Poetry depende
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone git@github.com:LeonByte/SearchEngine.git
    cd SearchEngine
    ```
 
