@@ -49,6 +49,21 @@ Built for local deployment on **NVIDIA RTX 4060 (8GB VRAM)** with Poetry depende
 | **Dataset** | Flickr8k (1K subset) | 1,000 images with 5,000 captions |
 | **Environment** | Python 3.12+ & Poetry | Dependency management |
 
+## Live Demonstrations
+
+### Web Interface
+[<img src="assets/screenshots/gradio-web-interface.png" alt="Gradio Web Interface" width="600">](assets/screenshots/gradio-web-interface.png)
+
+*Simple, intuitive web interface for text-to-image search*
+
+### Search Results Examples
+
+| Query | Results (click to enlarge) |
+|-------|---------|
+| "a dog playing in the park" | [<img src="assets/screenshots/search-results-dog-playing.png" alt="Dog Search Results" width="400">](assets/screenshots/search-results-dog-playing.png) |
+| "people on the beach" | [<img src="assets/screenshots/search-results-beach.png" alt="Beach Search Results" width="400">](assets/screenshots/search-results-beach.png) |
+| "person riding a bicycle" | [<img src="assets/screenshots/search-results-bicycle.png" alt="Bicycle Search Results" width="400">](assets/screenshots/search-results-bicycle.png) |
+
 ## Quick Start
 
 ### Prerequisites
