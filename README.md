@@ -103,6 +103,26 @@ Built for local deployment on **NVIDIA RTX 4060 (8GB VRAM)** with Poetry depende
    poetry run python -c "import torch; print(f'CUDA available: {torch.cuda.is_available()}'); print(f'GPU: {torch.cuda.get_device_name(0) if torch.cuda.is_available() else \"None\"}')"
    ```
 
+### Dataset Setup
+
+The Flickr8k dataset (~1GB) is not included in this repository due to size constraints.
+
+**Download and Setup:**
+
+1. **Download dataset manually**:
+   - Visit: https://www.kaggle.com/datasets/adityajn105/flickr8k
+   - Download the dataset zip file
+   
+2. **Extract to project structure**:
+   ```bash
+   # Extract downloaded zip to:
+   data/raw/Flickr 8k Dataset/
+   
+   # Verify structure:
+   data/raw/Flickr 8k Dataset/
+   ├── Images/              # 8,091 images (~1GB)  
+   └── captions.txt         # Image captions
+
 ## Running the Completed Project
 
 ### Jupyter Notebooks (Recommended)
